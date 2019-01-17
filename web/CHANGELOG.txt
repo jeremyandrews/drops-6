@@ -1,3 +1,18 @@
+Drupal 6.38-p6, 2018-04-17 - SA-CORE-2018-006
+
+The path module allows users with the 'administer url aliases' permission to
+create pretty URLs for content.
+
+In certain circumstances the user can enter a particular path that triggers an
+open redirect to a malicious url.
+
+The issue is mitigated by the fact that the user needs the administer url
+aliases permission to exploit.
+
+Upstream reference:
+https://www.drupal.org/sa-core-2018-006
+
+
 Drupal 6.38-p5, 2018-04-25 - SA-CORE-2018-004
 
 A remote code execution vulnerability may exist within multiple subsystems of
