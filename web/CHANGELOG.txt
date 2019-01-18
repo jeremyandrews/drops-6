@@ -1,3 +1,18 @@
+Drupal 6.38-p7, 2019-01-16 - SA-CORE-2019-002
+
+A remote code execution vulnerability exists in PHP's built-in phar stream
+wrapper when performing file operations on an untrusted phar:// URI.
+
+Some Drupal code (core, contrib, and custom) may be performing file operations
+on insufficiently validated user input, thereby being exposed to this vulnerability.
+
+This vulnerability is mitigated by the fact that such code paths typically require
+access to an administrative permission or an atypical configuration.
+
+Upstream reference:
+https://www.drupal.org/sa-core-2019-002
+
+
 Drupal 6.38-p6, 2018-04-17 - SA-CORE-2018-006
 
 The path module allows users with the 'administer url aliases' permission to
