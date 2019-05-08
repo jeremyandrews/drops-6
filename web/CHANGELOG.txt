@@ -1,14 +1,20 @@
+Drupal 6.38-p9, 2019-05-08 - SA-CORE-2019-007
+
+This security release fixes third-party dependencies included in or required by Drupal core. Described in TYPO3-PSA-2019-007: By-passing protection of Phar Stream Wrapper Interceptor: https://typo3.org/security/advisory/typo3-psa-2019-007/
+
+Upstream reference:
+https://www.drupal.org/sa-core-2019-007
+
 Drupal 6.38-p8, 2019-04-17 - SA-CORE-2019-006
 
-jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products,
-mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution.
+The jQuery project released version 3.4.0, and as part of that, disclosed a security vulnerability that affects all prior versions. As described in their release notes:
 
-If an unsanitized source object contained an enumerable __proto__ property, it
-could extend the native Object.prototype.
+    jQuery 3.4.0 includes a fix for some unintended behavior when using jQuery.extend(true, {}, ...). If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype. This fix is included in jQuery 3.4.0, but patch diffs exist to patch previous jQuery versions.
+
+It's possible that this vulnerability is exploitable with some Drupal modules. As a precaution, this Drupal security release backports the fix to jQuery.extend(), without making any other changes to the jQuery version that is included in Drupal core or running on the site via some other module such as jQuery Update.
 
 Upstream reference:
 https://www.drupal.org/sa-core-2019-006
-CVE-2019-11358
 
 Drupal 6.38-p7, 2019-01-16 - SA-CORE-2019-002
 
