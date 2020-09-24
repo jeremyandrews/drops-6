@@ -1,3 +1,20 @@
+Drupal 6.38-p10, 2020-05-20 - SA-CORE-2020-002
+
+The jQuery project released version 3.5.0, and as part of that, disclosed two security vulnerabilities that affect all prior versions. As mentioned in the jQuery blog, both are
+
+    [...] security issues in jQuery’s DOM manipulation methods, as in .html(), .append(), and the others. Security advisories for both of these issues have been published on GitHub.
+
+Those advisories are:
+
+    CVE-2020-11022: https://github.com/jquery/jquery/security/advisories/GHSA-gxr4-xjj5-5px2
+    CVE-2020-11023: https://github.com/jquery/jquery/security/advisories/GHSA-jpcq-cgw6-v4j6
+
+These vulnerabilities may be exploitable on some Drupal sites. This Drupal security release backports the fixes to the relevant jQuery functions, without making any other changes to the jQuery version that is included in Drupal core or running on the site via some other module such as jQuery Update. It is not necessary to update jquery_update on Drupal 6 sites that have the module installed.
+
+Upstream reference:
+https://www.drupal.org/sa-core-2020-002
+
+
 Drupal 6.38-p9, 2019-05-08 - SA-CORE-2019-007
 
 This security release fixes third-party dependencies included in or required by Drupal core. Described in TYPO3-PSA-2019-007: By-passing protection of Phar Stream Wrapper Interceptor: https://typo3.org/security/advisory/typo3-psa-2019-007/
