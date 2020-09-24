@@ -1,3 +1,11 @@
+Drupal 6.38-p11, 2020-06-17 - SA-CORE-2020-004
+
+The Drupal core Form API does not properly handle certain form input from cross-site requests, which can lead to other vulnerabilities.
+
+Upstream reference:
+https://www.drupal.org/sa-core-2020-004
+
+
 Drupal 6.38-p10, 2020-05-20 - SA-CORE-2020-002
 
 The jQuery project released version 3.5.0, and as part of that, disclosed two security vulnerabilities that affect all prior versions. As mentioned in the jQuery blog, both are
