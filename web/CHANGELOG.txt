@@ -1,3 +1,11 @@
+Drupal 6.38-p13, 2020-11-18 - SA-CORE-2020-012
+
+Drupal core does not properly sanitize certain filenames on uploaded files, which can lead to files being interpreted as the incorrect extension and served as the wrong MIME type or executed as PHP for certain hosting configurations.
+
+Upstream reference:
+https://www.drupal.org/sa-core-2020-012
+
+
 Drupal 6.38-p12, 2020-09-16 - SA-CORE-2020-007
 
 The Drupal AJAX API does not disable JSONP by default, which can lead to cross-site scripting.
