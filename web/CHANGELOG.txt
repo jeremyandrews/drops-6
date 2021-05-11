@@ -1,3 +1,11 @@
+Drupal 6.38-p14, 2021-04-21 - SA-CORE-2021-002
+
+Drupal core's sanitization API fails to properly filter cross-site scripting under certain circumstances.
+
+Upstream reference:
+https://www.drupal.org/sa-core-2021-002
+
+
 Drupal 6.38-p13, 2020-11-18 - SA-CORE-2020-012
 
 Drupal core does not properly sanitize certain filenames on uploaded files, which can lead to files being interpreted as the incorrect extension and served as the wrong MIME type or executed as PHP for certain hosting configurations.
